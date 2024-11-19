@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FixYa - Página Principal</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #03301e;
+            font-size: 42px;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        .section {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #03301e;
+            margin-bottom: 20px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        button {
+            flex: 1;
+            padding: 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .buttons {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>FixYa API - Opciones CRUD</h1>
+
+        <!-- Administrativos -->
+        <div class="section">
+            <h2>1. Administrativos</h2>
+            <div class="buttons">
+                <button onclick="window.location.href='administrativeCrud.html'">Ver Administrativos</button>
+                <button onclick="window.location.href='administrativeCrud.js'">Agregar Administrativo</button>
+                <button onclick="window.location.href='administrativeCrud.js'">Actualizar Administrativo</button>
+                <button onclick="window.location.href='administrativeCrud.js'">Eliminar Administrativo</button>
+            </div>
+        </div>
+        
+
+        <!-- Historial de Servicio -->
+        <div class="section">
+            <h2>2. Historial de Servicio</h2>
+            <div class="buttons">
+                <button onclick="window.location.href='ver-historial-servicio.html'">Ver Historial de Servicios</button>
+                <button onclick="window.location.href='agregar-historial-servicio.html'">Agregar Historial de Servicio</button>
+                <button onclick="window.location.href='actualizar-historial-servicio.html'">Actualizar Historial de Servicio</button>
+                <button onclick="window.location.href='eliminar-historial-servicio.html'">Eliminar Historial de Servicios</button>
+            </div>
+        </div>
+
+        <!-- Facturas -->
+        <div class="section">
+            <h2>3. Facturas</h2>
+            <div class="buttons">
+                <button onclick="window.location.href='ver-facturas.html'">Ver Facturas</button>
+                <button onclick="window.location.href='agregar-factura.html'">Agregar Factura</button>
+                <button onclick="window.location.href='actualizar-factura.html'">Actualizar Factura</button>
+                <button onclick="window.location.href='eliminar-factura.html'">Eliminar Facturas</button>
+            </div>
+        </div>
+
+        <!-- Notificaciones -->
+        <div class="section">
+            <h2>4. Notificaciones</h2>
+            <div class="buttons">
+                <button onclick="window.location.href='ver-notificaciones.html'">Ver Notificaciones</button>
+                <button onclick="window.location.href='ver-notificacion-id.html'">Ver Notificación por ID</button>
+            </div>
+        </div>
+
+        <!-- Pagos -->
+        <div class="section">
+            <h2>5. Pagos</h2>
+            <div class="buttons">
+                <button onclick="window.location.href='ver-pagos.html'">Ver Pagos</button>
+                <button onclick="window.location.href='agregar-pago.html'">Agregar Pago</button>
+                <button onclick="window.location.href='actualizar-pago.html'">Actualizar Pago</button>
+                <button onclick="window.location.href='eliminar-pago.html'">Eliminar Pago</button>
+            </div>
+        </div>
+
+        <!-- Proveedores -->
+        <div class="section">
+            <h2>6. Proveedores</h2>
+            <div class="buttons">
+                <button onclick="window.location.href='ver-proveedores.html'">Ver Proveedores</button>
+                <button onclick="window.location.href='agregar-proveedor.html'">Agregar Proveedor</button>
+                <button onclick="window.location.href='actualizar-proveedor.html'">Actualizar Proveedor</button>
+                <button onclick="window.location.href='eliminar-proveedor.html'">Eliminar Proveedor</button>
+            </div>
+        </div>
+
+        <!-- Residentes -->
+        <div class="section">
+            <h2>7. Residentes</h2>
+            <div class="buttons">
+                <button onclick="window.location.href='ver-residentes.html'">Ver Residentes</button>
+                <button onclick="window.location.href='agregar-residente.html'">Agregar Residente</button>
+                <button onclick="window.location.href='actualizar-residente.html'">Actualizar Residente</button>
+                <button onclick="window.location.href='eliminar-residente.html'">Eliminar Residente</button>
+            </div>
+        </div>
+
+        <!-- Servicios -->
+        <div class="section">
+            <h2>8. Servicios</h2>
+            <div class="buttons">
+                <button onclick="window.location.href='ver-servicios.html'">Ver Servicios</button>
+                <button onclick="window.location.href='agregar-servicio.html'">Agregar Servicio</button>
+                <button onclick="window.location.href='actualizar-servicio.html'">Actualizar Servicio</button>
+                <button onclick="window.location.href='eliminar-servicio.html'">Eliminar Servicio</button>
+            </div>
+        </div>
+
+        <!-- Solicitudes -->
+        <div class="section">
+            <h2>9. Solicitudes</h2>
+            <div class="buttons">
+                <button onclick="window.location.href='ver-solicitudes.html'">Ver Solicitudes</button>
+                <button onclick="window.location.href='agregar-solicitud.html'">Agregar Solicitud</button>
+                <button onclick="window.location.href='actualizar-solicitud.html'">Actualizar Solicitud</button>
+                <button onclick="window.location.href='eliminar-solicitud.html'">Eliminar Solicitud</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const baseUrl = 'http://localhost:3001/api';
+
+// Funciones CRUD para cada tipo de dato:
+
+// Administradores
+async function verAdministradores() {
+    const response = await fetch(`${baseUrl}/administrators`);
+    const data = await response.json();
+    document.getElementById('output').innerHTML = JSON.stringify(data, null, 2);
+}
+
+async function agregarAdministrador() {
+    const nuevoAdmin = {
+        nombre: "Juan Pérez",
+        email: "juan.perez2@ejemplo.com",
+        rol: "Administrador",
+        fechaIngreso: "2024-10-01"
+    };
+    const response = await fetch(`${baseUrl}/administrators`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(nuevoAdmin)
+    });
+    const data = await response.json();
+    document.getElementById('output').innerHTML = `Administrador agregado: ${JSON.stringify(data)}`;
+}
+
+async function actualizarAdministrador() {
+    const adminId = prompt("ID del administrador a actualizar:");
+    const adminActualizado = {
+        nombre: "Carlos Sánchez Actualizado"
+    };
+    const response = await fetch(`${baseUrl}/administrators/${adminId}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(adminActualizado)
+    });
+    const data = await response.json();
+    document.getElementById('output').innerHTML = `Administrador actualizado: ${JSON.stringify(data)}`;
+}
+
+async function eliminarAdministrador() {
+    const adminId = prompt("ID del administrador a eliminar:");
+    const response = await fetch(`${baseUrl}/administrators/${adminId}`, {
+        method: 'DELETE'
+    });
+    document.getElementById('output').innerHTML = `Administrador con ID ${adminId} eliminado`;
+}
+
+// Historial de Servicio
+async function verHistorialServicio() {
+    const response = await fetch(`${baseUrl}/historialServicios`);
+    const data = await response.json();
+    document.getElementById('output').innerHTML = JSON.stringify(data, null, 2);
+}
+
+async function agregarHistorialServicio() {
+    const nuevoHistorial = {
+        proveedorId: 1,
+        solicitudId: 1,
+        fechaFinalizacion: "2024-10-12",
+        comentarios: "Servicio completado"
+    };
+    const response = await fetch(`${baseUrl}/historialServicios`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(nuevoHistorial)
+    });
+    const data = await response.json();
+    document.getElementById('output').innerHTML = `Historial de Servicio agregado: ${JSON.stringify(data)}`;
+}
+
+async function actualizarHistorialServicio() {
+    const historialId = prompt("ID del historial de servicio a actualizar:");
+    const historialActualizado = {
+        comentarios: "Servicio actualizado"
+    };
+    const response = await fetch(`${baseUrl}/historialServicios/${historialId}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(historialActualizado)
+    });
+    const data = await response.json();
+    document.getElementById('output').innerHTML = `Historial de Servicio actualizado: ${JSON.stringify(data)}`;
+}
+
+async function eliminarHistorialServicio() {
+    const historialId = prompt("ID del historial de servicio a eliminar:");
+    const response = await fetch(`${baseUrl}/historialServicios/${historialId}`, {
+        method: 'DELETE'
+    });
+    document.getElementById('output').innerHTML = `Historial de Servicio con ID ${historialId} eliminado`;
+}
+
+// Facturas
+async function verFacturas() {
+    const response = await fetch(`${baseUrl}/facturas`);
+    const data = await response.json();
+    document.getElementById('output').innerHTML = JSON.stringify(data, null, 2);
+}
+
+async function agregarFactura() {
+    const nuevaFactura = {
+        monto: 300,
+        fechaEmision: "2024-10-01",
+        proveedorId: 1,
+        solicitudId: 1
+    };
+    const response = await fetch(`${baseUrl}/facturas`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(nuevaFactura)
+    });
+    const data = await response.json();
+    document.getElementById('output').innerHTML = `Factura agregada: ${JSON.stringify(data)}`;
+}
+
+async function actualizarFactura() {
+    const facturaId = prompt("ID de la factura a actualizar:");
+    const facturaActualizada = {
+        monto: 350
+    };
+    const response = await fetch(`${baseUrl}/facturas/${facturaId}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(facturaActualizada)
+    });
+    const data = await response.json();
+    document.getElementById('output').innerHTML = `Factura actualizada: ${JSON.stringify(data)}`;
+}
+
+async function eliminarFactura() {
+    const facturaId = prompt("ID de la factura a eliminar:");
+    const response = await fetch(`${baseUrl}/facturas/${facturaId}`, {
+        method: 'DELETE'
+    });
+    document.getElementById('output').innerHTML = `Factura con ID ${facturaId} eliminada`;
+}
+
+// Notificaciones
+async function verNotificaciones() {
+    const response = await fetch(`${baseUrl}/notificaciones`);
+    const data = await response.json();
+    document.getElementById('output').innerHTML = JSON.stringify(data, null, 2);
+}
+
+async function agregarNotificacion() {
+    const nuevaNotificacion = {
+        contenido: "Su solicitud ha sido completada",
+        fechaEnvio: "2024-10-01",
+        destinatarioId: 1,
+        tipoDestinatario: "Residente"
+    };
+    const response = await fetch(`${baseUrl}/notificaciones`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(nuevaNotificacion)
+    });
+    const data = await response.json();
+    document.getElementById('output').innerHTML = `Notificación agregada: ${JSON.stringify(data)}`;
+}
+
+async function actualizarNotificacion() {
+    const notificacionId = prompt("ID de la notificación a actualizar:");
+    const notificacionActualizada = {
+        contenido: "Su solicitud ha sido retrasada"
+    };
+    const response = await fetch(`${baseUrl}/notificaciones/${notificacionId}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(notificacionActualizada)
+    });
+    const data = await response.json();
+    document.getElementById('output').innerHTML = `Notificación actualizada: ${JSON.stringify(data)}`;
+}
+
+async function eliminarNotificacion() {
+    const notificacionId = prompt("ID de la notificación a eliminar:");
+    const response = await fetch(`${baseUrl}/notificaciones/${notificacionId}`, {
+        method: 'DELETE'
+    });
+    document.getElementById('output').innerHTML = `Notificación con ID ${notificacionId} eliminada`;
+}
+
+// Pagos
+async function verPagos() {
+    const response = await fetch(`${baseUrl}/pagos`);
+    const data = await response.json();
+    document.getElementById('output').innerHTML = JSON.stringify(data, null, 2);
+}
+
+async function agregarPago() {
+    const nuevoPago = {
+        monto: 250,
+        fechaPago: "2024-10-01",
+        metodo: "Tarjeta de crédito",
+        facturaId: 1
+    };
+    const response = await fetch(`${baseUrl}/pagos`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(nuevoPago)
+    });
+    const data = await response.json();
+    document.getElementById('output').innerHTML = `Pago agregado: ${JSON.stringify(data)}`;
+}
+
+async function actualizarPago() {
+    const pagoId = prompt("ID del pago a actualizar:");
+    const pagoActualizado = {
+        monto: 300
+    };
+    const response = await fetch(`${baseUrl}/pagos/${pagoId}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(pagoActualizado)
+    });
+    const data = await response.json();
+    document.getElementById('output').innerHTML = `Pago actualizado: ${JSON.stringify(data)}`;
+}
+
+async function eliminarPago() {
+    const pagoId = prompt("ID del pago a eliminar:");
+    const response = await fetch(`${baseUrl}/pagos/${pagoId}`, {
+        method: 'DELETE'
+    });
+    document.getElementById('output').innerHTML = `Pago con ID ${pagoId} eliminado`;
+}
+
+// Proveedores
+async function verProveedores() {
+    const response = await fetch(`${baseUrl}/proveedores`);
+    const data = await response.json();
+    document.getElementById('output').innerHTML = JSON.stringify(data, null, 2);
+}
+
+async function agregarProveedor() {
+    const nuevoProveedor = {
+        nombre: "Jardinería Verde",
+        servicioOfrecido: "Jardinería",
+        certificaciones: ["Jardinero Certificado"],
+        calificacion: 4.6,
+        informacionContacto: {
+            telefono: "9891312211",
+            email: "contacto@jardineriaverde.com"
+        }
+    };
+    const response = await fetch(`${baseUrl}/proveedores`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(nuevoProveedor)
+    });
+    const data = await response.json();
+    document.getElementById('output').innerHTML = `Proveedor agregado: ${JSON.stringify(data)}`;
+}
+
+async function actualizarProveedor() {
+    const proveedorId = prompt("ID del proveedor a actualizar:");
+    const proveedorActualizado = {
+        calificacion: 5.0
+    };
+    const response = await fetch(`${baseUrl}/proveedores/${proveedorId}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(proveedorActualizado)
+    });
+    const data = await response.json();
+    document.getElementById('output').innerHTML = `Proveedor actualizado: ${JSON.stringify(data)}`;
+}
+
+async function eliminarProveedor() {
+    const proveedorId = prompt("ID del proveedor a eliminar:");
+    const response = await fetch(`${baseUrl}/proveedores/${proveedorId}`, {
+        method: 'DELETE'
+    });
+    document.getElementById('output').innerHTML = `Proveedor con ID ${proveedorId} eliminado`;
+}
+
+// Residentes
+async function verResidentes() {
+    const response = await fetch(`${baseUrl}/residentes`);
+    const data = await response.json();
+    document.getElementById('output').innerHTML = JSON.stringify(data, null, 2);
+}
+
+async function agregarResidente() {
+    const nuevoResidente = {
+        nombre: "Carlos García",
+        email: "carlos.garcia@ejemplo.com",
+        telefono: "5551234567"
+    };
+    const response = await fetch(`${baseUrl}/residentes`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(nuevoResidente)
+    });
+    const data = await response.json();
+    document.getElementById('output').innerHTML = `Residente agregado: ${JSON.stringify(data)}`;
+}
+
+async function actualizarResidente() {
+    const residenteId = prompt("ID del residente a actualizar:");
+    const residenteActualizado = {
+        telefono: "5559876543"
+    };
+    const response = await fetch(`${baseUrl}/residentes/${residenteId}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(residenteActualizado)
+    });
+    const data = await response.json();
+    document.getElementById('output').innerHTML = `Residente actualizado: ${JSON.stringify(data)}`;
+}
+
+async function eliminarResidente() {
+    const residenteId = prompt("ID del residente a eliminar:");
+    const response = await fetch(`${baseUrl}/residentes/${residenteId}`, {
+        method: 'DELETE'
+    });
+    document.getElementById('output').innerHTML = `Residente con ID ${residenteId} eliminado`;
+}
+
+// Servicios
+async function verServicios() {
+    const response = await fetch(`${baseUrl}/services`);
+    const data = await response.json();
+    document.getElementById('output').innerHTML = JSON.stringify(data, null, 2);
+}
+
+async function agregarServicio() {
+    const nuevoServicio = {
+        nombre: "Limpieza de ventanas",
+        descripcion: "Servicio de limpieza de ventanas interiores y exteriores",
+        precio: 80.50
+    };
+    const response = await fetch(`${baseUrl}/services`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(nuevoServicio)
+    });
+    const data = await response.json();
+    document.getElementById('output').innerHTML = `Servicio agregado: ${JSON.stringify(data)}`;
+}
+
+async function actualizarServicio() {
+    const servicioId = prompt("ID del servicio a actualizar:");
+    const servicioActualizado = {
+        precio: 100.00
+    };
+    const response = await fetch(`${baseUrl}/services/${servicioId}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(servicioActualizado)
+    });
+    const data = await response.json();
+    document.getElementById('output').innerHTML = `Servicio actualizado: ${JSON.stringify(data)}`;
+}
+
+async function eliminarServicio() {
+    const servicioId = prompt("ID del servicio a eliminar:");
+    const response = await fetch(`${baseUrl}/services/${servicioId}`, {
+        method: 'DELETE'
+    });
+    document.getElementById('output').innerHTML = `Servicio con ID ${servicioId} eliminado`;
+}
+
+// Solicitudes
+async function verSolicitudes() {
+    const response = await fetch(`${baseUrl}/solicitudes`);
+    const data = await response.json();
+    document.getElementById('output').innerHTML = JSON.stringify(data, null, 2);
+}
+
+async function agregarSolicitud() {
+    const nuevaSolicitud = {
+        descripcion: "Problema con la tubería del baño",
+        tipoServicio: "Plomería",
+        estado: "pendiente",
+        fechaCreacion: "2024-09-28",
+        prioridad: "Alta",
+        residenteId: 2,
+        proveedorId: 2
+    };
+    const response = await fetch(`${baseUrl}/solicitudes`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(nuevaSolicitud)
+    });
+    const data = await response.json();
+    document.getElementById('output').innerHTML = `Solicitud agregada: ${JSON.stringify(data)}`;
+}
+
+async function actualizarSolicitud() {
+    const solicitudId = prompt("ID de la solicitud a actualizar:");
+    const solicitudActualizada = {
+        estado: "completado"
+    };
+    const response = await fetch(`${baseUrl}/solicitudes/${solicitudId}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(solicitudActualizada)
+    });
+    const data = await response.json();
+    document.getElementById('output').innerHTML = `Solicitud actualizada: ${JSON.stringify(data)}`;
+}
+
+async function eliminarSolicitud() {
+    const solicitudId = prompt("ID de la solicitud a eliminar:");
+    const response = await fetch(`${baseUrl}/solicitudes/${solicitudId}`, {
+        method: 'DELETE'
+    });
+    document.getElementById('output').innerHTML = `Solicitud con ID ${solicitudId} eliminada`;
+}
+
+    </script>
+
+</body>
+</html>
